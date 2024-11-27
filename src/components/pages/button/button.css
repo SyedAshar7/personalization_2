@@ -1,0 +1,18 @@
+/* Button.css */
+.custom-button {
+  padding: 10px 15px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.custom-button:disabled {
+  background-color: #ccc;
+}
+
+.custom-button:hover {
+  background-color: darkred;
+}

@@ -1,0 +1,204 @@
+/* Main container styling */
+.maintenance-logs {
+  max-width: 420px;
+  margin: 20px auto;
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  box-sizing: border-box;
+  overflow-y: auto; /* Scrollable content */
+  max-height: 100vh; /* Full viewport height */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.maintenance-logs::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Opera */
+}
+
+/* Main heading styling */
+.main-heading {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+/* Today section styling */
+.today-section {
+  margin-top: 10px;
+}
+
+.today-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.date {
+  color: #d32f2f;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.add-task-button {
+  background-color: #ff3b30;
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+.add-task-button:hover {
+  background-color: #e33329;
+}
+
+/* Sub-date styling */
+.sub-date {
+  color: #888;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+/* Task list styling */
+.task-item {
+  display: flex;
+  align-items: center;
+  padding: 8px; /* Reduced padding for smaller height */
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  margin-bottom: 6px; /* Slightly reduced margin for compact look */
+  transition: background-color 0.2s;
+}
+
+.task-item.completed {
+  background-color: #e6ffe6;
+}
+
+/* Checkbox styling */
+.task-checkbox {
+  margin-right: 8px; /* Reduced margin */
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+  accent-color: #4caf50;
+}
+
+/* Task content styling */
+.task-content {
+  flex: 1;
+}
+
+.task-title {
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+  font-size: 14px;
+}
+
+.task-time {
+  color: #999;
+  font-size: 12px;
+  margin-top: 2px;
+}
+
+/* See more styling */
+.see-more {
+  text-align: center;
+  color: #ff3b30;
+  cursor: pointer;
+  font-size: 13px;
+  margin-top: 12px;
+}
+
+/* Responsive styling */
+@media (max-width: 1024px) {
+  .maintenance-logs {
+    width: 90%;
+    padding: 16px;
+  }
+
+  .task-item {
+    padding: 10px;
+  }
+
+  .task-title {
+    font-size: 13px;
+  }
+
+  .task-time {
+    font-size: 11px;
+  }
+
+  .see-more {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .maintenance-logs {
+    width: 95%;
+    padding: 14px;
+  }
+
+  .today-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .add-task-button {
+    margin-left: 10px;
+  }
+
+  .task-item {
+    padding: 8px;
+  }
+
+  .task-title {
+    font-size: 12px;
+  }
+
+  .task-time {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .maintenance-logs {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .add-task-button {
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+  }
+
+  .task-item {
+    padding: 6px;
+  }
+
+  .task-title {
+    font-size: 11px;
+  }
+
+  .task-time {
+    font-size: 9px;
+  }
+
+  .see-more {
+    font-size: 11px;
+  }
+}

@@ -1,0 +1,109 @@
+/* global.css
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+} */
+
+
+/* For the Personalize container */
+.Personalize-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f9f9f9;
+}
+
+/* For the QuestionScreen */
+.QuestionScreen {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 90vh; /* Adjust as per design */
+  width: 90vw; /* Adjust as per design */
+  max-width: 400px; /* For desktop view */
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* For the progress bar */
+.progress-bar {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.progress {
+  height: 4px;
+  background-color: #d32f2f;
+  border-radius: 2px;
+}
+
+/* Options styling */
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.option-button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e0e0e0;
+  color: #000000;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.option-button:hover {
+  background-color: #d32f2f;
+  color: #ffffff;
+}
+
+/* Next button styling */
+.next-button {
+  padding: 15px;
+  width: 100%;
+  background-color: #d32f2f;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.next-button:hover {
+  background-color: #b71c1c;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .QuestionScreen {
+    height: 95vh;
+    width: 95vw;
+  }
+
+  .option-button,
+  .next-button {
+    font-size: 14px;
+    padding: 12px;
+  }
+}
